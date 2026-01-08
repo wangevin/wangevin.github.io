@@ -1,89 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- =========================================
+         Document Metadata
+         ========================================= -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal landing page and portfolio summary for Bill Angevine, specializing in Systems Architecture.">
-    <title>Welcome to [BillAngevine.com]</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-<body>
 
+    <!-- Mobile-first responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO-friendly description -->
+    <meta name="description"
+          content="Personal landing page and professional portfolio summary for Bill Angevine, Fellow and Principal Cloud Architect specializing in systems architecture and complex engineering.">
+
+    <!-- Author metadata (optional but recommended) -->
+    <meta name="author" content="Bill Angevine">
+
+    <title>Bill Angevine | Systems & Cloud Architecture</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =========================================
+         Site Header & Primary Navigation
+         ========================================= -->
+    <!-- <header> establishes a global page landmark -->
     <header class="site-header container">
-        <div class="logo">BillAngevine.com</div>
-        <nav>
+        <!-- Branding text is content, not layout -->
+        <p class="logo">BillAngevine.com</p>
+
+        <!-- Primary site navigation -->
+        <nav aria-label="Primary navigation">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="https://linkedin.com/in/billangevine" target="_blank" rel="noopener noreferrer" class="btn btn-small">LinkedIn</a></li>
+
+                <!-- External link styled as button -->
+                <li>
+                    <a href="https://linkedin.com/in/billangevine"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-small">
+                        LinkedIn
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <!-- =========================================
+         Main Content
+         ========================================= -->
+    <!-- <main> identifies the dominant page content -->
     <main>
+        <!-- =====================================
+             Hero / Introduction Section
+             ===================================== -->
         <section class="hero container">
-            <div class="hero-content">
-                <p class="overline">
-                    Temporary Landing Page
-                </p>
+            <!-- <article> represents a self-contained content block -->
+            <article class="hero-content">
+                <!-- Overline is stylistic text, not a heading -->
+                <p class="overline">Temporary Landing Page</p>
+
+                <!-- Single H1 for the entire document -->
                 <h1 class="headline">Bill Angevine</h1>
-                <h2 class="subhead">Fellow & Principal Cloud Architect at Lockheed Martin | Cloud Strategy | Complex Systems Engineering | User-Centric Design | Business Transformation that bridge technical complexity with high-impact business ROI.</h2>
-                <p class="hero-text">
-                    Welcome to this inital landing page. This domain serves as the central hub for my professional identity, projects, and technical portfolio.
+
+                <!-- Descriptive subheading styled via CSS, not structural -->
+                <p class="subhead">
+                    Fellow &amp; Principal Cloud Architect at Lockheed Martin |
+                    Cloud Strategy | Complex Systems Engineering |
+                    User-Centric Design | Business Transformation
                 </p>
-                <div class="cta-group">
+
+                <p class="hero-text">
+                    Welcome to this initial landing page. This domain serves as
+                    the central hub for my professional identity, projects,
+                    and technical portfolio.
+                </p>
+
+                <!-- CTA navigation grouped semantically -->
+                <nav class="cta-group" aria-label="Primary calls to action">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    </div>
-            </div>
+                </nav>
+            </article>
         </section>
 
+        <!-- =====================================
+             About & Competencies Section
+             ===================================== -->
         <section id="about" class="summary container">
+            <!-- Grid is layout-only; div is appropriate -->
             <div class="summary-grid">
-                <div class="card about-card">
-                    <h3>About Me</h3>
+
+                <!-- About card is independent content -->
+                <article class="card about-card">
+                    <!-- Section-level heading -->
+                    <h2>About Me</h2>
+
                     <p>
-A Lockheed Martin Fellow and a Certified Enterprise Architect over time progressively advancing in various technical and managerial positions. As a Fellow, I am responsible for solving the tough “911” calls (reactive), actively participating in Engineering reviews (proactive), mentoring, and knowledge transfer.
-
-I have a great passion for mentoring and knowledge transfer. I have actively seek out and successfully mentoring many of our brightest technical talents and am proactive in knowledge and experience transfer.
-Catch Phrases:
-<ul>
-<li>“Catch someone in the act of doing something good”</li>
-<li>"Laugh out loud 3 times a day"</li>
-<li>"Yes, and ..."  </li>  
-</ul>
-
-Effective Public speaker and successful technical author of internal white papers across multiple domains. as well as, Independent Non-Advocate Reviews & Red to Green Responsibilities
+                        A Lockheed Martin Fellow and Certified Enterprise Architect,
+                        progressively advancing through technical and managerial roles.
+                        As a Fellow, I engage in high-impact problem solving,
+                        engineering reviews, mentoring, and knowledge transfer.
                     </p>
-                </div>
 
-                <div class="card skills-card">
-                    <h3>Core Competencies</h3>
-                    <p class="skills-intro">Technologies and methodologies I work with daily:</p>
-                    <div class="skills-container">
-                        <span class="skill-chip">Linux Administration</span>
-                        <span class="skill-chip">DNS & Networking</span>
-                        <span class="skill-chip">Cloud Infrastructure (AWS/Azure)</span>
-                        <span class="skill-chip">Docker & Kubernetes</span>
-                        <span class="skill-chip">Infrastructure as Code (Terraform)</span>
-                        <span class="skill-chip">Python Scripting</span>
-                        <span class="skill-chip">Cybersecurity Best Practices</span>
-                        <span class="skill-chip">CI/CD Pipelines</span>
-                    </div>
-                </div>
+                    <p>
+                        I have a strong passion for mentoring and actively seek out
+                        opportunities to develop and elevate emerging technical talent.
+                    </p>
+
+                    <!-- Lists must not be nested inside paragraphs -->
+                    <p>Personal catch phrases:</p>
+                    <ul>
+                        <li>“Catch someone in the act of doing something good”</li>
+                        <li>“Laugh out loud three times a day”</li>
+                        <li>“Yes, and …”</li>
+                    </ul>
+
+                    <p>
+                        I am an effective public speaker and a technical author
+                        of internal white papers across multiple domains, as well as
+                        a contributor to independent reviews and red-to-green initiatives.
+                    </p>
+                </article>
+
+                <!-- Skills card is also independent content -->
+                <article class="card skills-card">
+                    <h2>Core Competencies</h2>
+
+                    <p class="skills-intro">
+                        Technologies and methodologies I work with regularly:
+                    </p>
+
+                    <!-- Skill chips are a list conceptually -->
+                    <ul class="skills-container">
+                        <li class="skill-chip">Linux Administration</li>
+                        <li class="skill-chip">DNS &amp; Networking</li>
+                        <li class="skill-chip">Cloud Infrastructure (AWS / Azure)</li>
+                        <li class="skill-chip">Docker &amp; Kubernetes</li>
+                        <li class="skill-chip">Infrastructure as Code (Terraform)</li>
+                        <li class="skill-chip">Python Scripting</li>
+                        <li class="skill-chip">Cybersecurity Best Practices</li>
+                        <li class="skill-chip">CI/CD Pipelines</li>
+                    </ul>
+                </article>
+
             </div>
         </section>
     </main>
 
+    <!-- =========================================
+         Footer & Contact Information
+         ========================================= -->
+    <!-- <footer> provides site-wide metadata -->
     <footer id="contact" class="site-footer container">
         <div class="footer-content">
-            <p>&copy; 2026 [Your Name]. All rights reserved.</p>
-            <p>Securely hosted on GitHub Pages via Porkbun DNS.</p>
-            <div class="social-links">
-                 <a href="mailto:your.email@example.com">Email</a> |
-                 <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+            <p>&copy; 2026 Bill Angevine. All rights reserved.</p>
+            <p>Securely hosted on GitHub Pages with Porkbun DNS.</p>
+
+            <!-- Secondary navigation -->
+            <nav class="social-links" aria-label="Contact and social links">
+                <a href="mailto:your.email@example.com">Email</a>
+                |
+                <a href="https://github.com/yourusername"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </nav>
         </div>
     </footer>
-
 </body>
 </html>
