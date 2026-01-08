@@ -9,16 +9,14 @@
     <!-- Mobile-first responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO-friendly description -->
+    <!-- SEO / recruiter-friendly description -->
     <meta name="description"
-          content="Personal landing page and professional portfolio summary for Bill Angevine, Fellow and Principal Cloud Architect specializing in systems architecture and complex engineering.">
+          content="Bill Angevine is a Fellow and Principal Cloud Architect specializing in enterprise systems architecture, cloud strategy, and complex engineering transformation.">
 
-    <!-- Author metadata (optional but recommended) -->
     <meta name="author" content="Bill Angevine">
 
-    <title>Bill Angevine | Systems & Cloud Architecture</title>
+    <title>Bill Angevine | Enterprise & Cloud Architecture</title>
 
-    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,18 +24,15 @@
     <!-- =========================================
          Site Header & Primary Navigation
          ========================================= -->
-    <!-- <header> establishes a global page landmark -->
     <header class="site-header container">
-        <!-- Branding text is content, not layout -->
+        <!-- Branding is content, not layout -->
         <p class="logo">BillAngevine.com</p>
 
-        <!-- Primary site navigation -->
         <nav aria-label="Primary navigation">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#impact">Impact</a></li>
                 <li><a href="#contact">Contact</a></li>
-
-                <!-- External link styled as button -->
                 <li>
                     <a href="https://linkedin.com/in/billangevine"
                        target="_blank"
@@ -53,34 +48,36 @@
     <!-- =========================================
          Main Content
          ========================================= -->
-    <!-- <main> identifies the dominant page content -->
     <main>
+
         <!-- =====================================
-             Hero / Introduction Section
+             Hero / Positioning Section
              ===================================== -->
         <section class="hero container">
-            <!-- <article> represents a self-contained content block -->
             <article class="hero-content">
-                <!-- Overline is stylistic text, not a heading -->
-                <p class="overline">Temporary Landing Page</p>
+                <p class="overline">Professional Landing Page</p>
 
-                <!-- Single H1 for the entire document -->
+                <!-- Single H1 for the page -->
                 <h1 class="headline">Bill Angevine</h1>
 
-                <!-- Descriptive subheading styled via CSS, not structural -->
+                <!-- Positioning statement optimized for recruiters -->
                 <p class="subhead">
-                    Fellow &amp; Principal Cloud Architect at Lockheed Martin |
-                    Cloud Strategy | Complex Systems Engineering |
-                    User-Centric Design | Business Transformation
+                    Fellow &amp; Principal Cloud Architect specializing in
+                    enterprise-scale systems architecture, cloud strategy,
+                    and complex engineering transformation.
                 </p>
 
                 <p class="hero-text">
-                    Welcome to this initial landing page. This domain serves as
-                    the central hub for my professional identity, projects,
-                    and technical portfolio.
+                    I solve high-impact, high-risk technical challenges and
+                    translate architectural complexity into scalable, secure,
+                    and measurable business outcomes.
                 </p>
 
-                <!-- CTA navigation grouped semantically -->
+                <p class="hero-text emphasis">
+                    Open to professional collaboration, technical advisory
+                    discussions, and speaking opportunities.
+                </p>
+
                 <nav class="cta-group" aria-label="Primary calls to action">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 </nav>
@@ -88,79 +85,142 @@
         </section>
 
         <!-- =====================================
-             About & Competencies Section
+             About Section
              ===================================== -->
         <section id="about" class="summary container">
-            <!-- Grid is layout-only; div is appropriate -->
-            <div class="summary-grid">
+            <article class="card about-card">
+                <h2>About Me</h2>
 
-                <!-- About card is independent content -->
-                <article class="card about-card">
-                    <!-- Section-level heading -->
-                    <h2>About Me</h2>
+                <p>
+                    I am a Lockheed Martin Fellow and Certified Enterprise Architect
+                    with deep experience in <strong>enterprise systems architecture,
+                    cloud infrastructure, and large-scale engineering leadership</strong>.
+                    My work focuses on addressing the most complex and time-critical
+                    technical challenges across mission-critical environments.
+                </p>
 
-                    <p>
-                        A Lockheed Martin Fellow and Certified Enterprise Architect,
-                        progressively advancing through technical and managerial roles.
-                        As a Fellow, I engage in high-impact problem solving,
-                        engineering reviews, mentoring, and knowledge transfer.
-                    </p>
+                <p>
+                    I operate at the intersection of <strong>architecture, execution,
+                    and governance</strong>, providing technical leadership across
+                    system design, cloud adoption, integration strategy, and risk
+                    mitigation. I am frequently engaged in engineering reviews,
+                    independent assessments, and rapid problem resolution efforts
+                    where architectural clarity and decisive action are required.
+                </p>
 
-                    <p>
-                        I have a strong passion for mentoring and actively seek out
-                        opportunities to develop and elevate emerging technical talent.
-                    </p>
+                <p>
+                    A core part of my role is <strong>mentoring and developing
+                    technical leaders</strong>, with an emphasis on knowledge
+                    transfer, engineering rigor, and sustainable system design.
+                </p>
 
-                    <!-- Lists must not be nested inside paragraphs -->
-                    <p>Personal catch phrases:</p>
-                    <ul>
-                        <li>“Catch someone in the act of doing something good”</li>
-                        <li>“Laugh out loud three times a day”</li>
-                        <li>“Yes, and …”</li>
-                    </ul>
+                <p class="section-label">Guiding principles:</p>
+                <ul>
+                    <li>Recognize and reinforce excellence as it happens</li>
+                    <li>Maintain perspective, curiosity, and humility</li>
+                    <li>Build forward collaboratively — “Yes, and …”</li>
+                </ul>
+            </article>
+        </section>
 
-                    <p>
-                        I am an effective public speaker and a technical author
-                        of internal white papers across multiple domains, as well as
-                        a contributor to independent reviews and red-to-green initiatives.
-                    </p>
-                </article>
+        <!-- =====================================
+             Selected Impact Section
+             ===================================== -->
+        <section id="impact" class="summary container">
+            <article class="card impact-card">
+                <h2>Selected Impact</h2>
 
-                <!-- Skills card is also independent content -->
-                <article class="card skills-card">
-                    <h2>Core Competencies</h2>
+                <ul class="impact-list">
+                    <li>
+                        Led and advised <strong>enterprise and cloud architecture</strong>
+                        for mission-critical systems supporting large-scale programs
+                    </li>
+                    <li>
+                        Provided <strong>architectural leadership and independent
+                        technical reviews</strong> to unblock high-risk initiatives
+                    </li>
+                    <li>
+                        Guided <strong>cloud adoption and modernization</strong>
+                        across AWS and Azure environments
+                    </li>
+                    <li>
+                        Mentored senior engineers and architects, accelerating
+                        technical growth and leadership readiness
+                    </li>
+                    <li>
+                        Contributed to <strong>engineering governance, security,
+                        compliance alignment, and system resiliency strategy</strong>
+                    </li>
+                </ul>
 
-                    <p class="skills-intro">
-                        Technologies and methodologies I work with regularly:
-                    </p>
+                <p class="disclaimer">
+                    Details intentionally generalized for confidentiality.
+                </p>
+            </article>
+        </section>
 
-                    <!-- Skill chips are a list conceptually -->
+        <!-- =====================================
+             Core Competencies Section
+             ===================================== -->
+        <section class="summary container">
+            <article class="card skills-card">
+                <h2>Core Competencies</h2>
+
+                <div class="skills-group">
+                    <h3>Architecture &amp; Strategy</h3>
                     <ul class="skills-container">
-                        <li class="skill-chip">Linux Administration</li>
-                        <li class="skill-chip">DNS &amp; Networking</li>
-                        <li class="skill-chip">Cloud Infrastructure (AWS / Azure)</li>
-                        <li class="skill-chip">Docker &amp; Kubernetes</li>
-                        <li class="skill-chip">Infrastructure as Code (Terraform)</li>
-                        <li class="skill-chip">Python Scripting</li>
-                        <li class="skill-chip">Cybersecurity Best Practices</li>
-                        <li class="skill-chip">CI/CD Pipelines</li>
+                        <li class="skill-chip">Enterprise Architecture</li>
+                        <li class="skill-chip">Systems Architecture & Integration</li>
+                        <li class="skill-chip">Technical Strategy & Roadmapping</li>
+                        <li class="skill-chip">Engineering Governance</li>
                     </ul>
-                </article>
+                </div>
 
-            </div>
+                <div class="skills-group">
+                    <h3>Cloud &amp; Platform Engineering</h3>
+                    <ul class="skills-container">
+                        <li class="skill-chip">AWS & Azure</li>
+                        <li class="skill-chip">Kubernetes & Containers</li>
+                        <li class="skill-chip">Infrastructure as Code (Terraform)</li>
+                        <li class="skill-chip">Scalability & Resilience</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Operational Excellence</h3>
+                    <ul class="skills-container">
+                        <li class="skill-chip">CI/CD Pipelines</li>
+                        <li class="skill-chip">Security & Compliance</li>
+                        <li class="skill-chip">Reliability Engineering</li>
+                        <li class="skill-chip">Risk Mitigation</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <h3>Leadership &amp; Enablement</h3>
+                    <ul class="skills-container">
+                        <li class="skill-chip">Technical Mentorship</li>
+                        <li class="skill-chip">Independent Technical Reviews</li>
+                        <li class="skill-chip">Cross-functional Collaboration</li>
+                        <li class="skill-chip">Executive Communication</li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
 
     <!-- =========================================
-         Footer & Contact Information
+         Footer / Contact
          ========================================= -->
-    <!-- <footer> provides site-wide metadata -->
     <footer id="contact" class="site-footer container">
         <div class="footer-content">
             <p>&copy; 2026 Bill Angevine. All rights reserved.</p>
-            <p>Securely hosted on GitHub Pages with Porkbun DNS.</p>
 
-            <!-- Secondary navigation -->
+            <p>
+                Open to technical advisory discussions, professional collaboration,
+                and speaking opportunities.
+            </p>
+
             <nav class="social-links" aria-label="Contact and social links">
                 <a href="mailto:your.email@example.com">Email</a>
                 |
