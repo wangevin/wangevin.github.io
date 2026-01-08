@@ -1,40 +1,32 @@
 /* =========================================
-   Modern Reset & Design Tokens (2026)
+   Design Tokens & Reset
    ========================================= */
 :root {
-    /* Color Palette */
     --bg-main: #0f172a;
     --bg-secondary: #1e293b;
 
-    /* Increased contrast for accessibility */
     --text-primary: #f8fafc;
     --text-secondary: #a1acc2;
 
     --accent: #6366f1;
     --accent-hover: #818cf8;
 
-    /* Typography */
     --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-    /* Layout */
     --container-width: 1100px;
     --border-radius: 12px;
     --section-spacing: 5rem;
 }
 
-/* =========================================
-   CSS Reset
-   ========================================= */
+/* Reset */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     background-color: var(--bg-main);
@@ -44,9 +36,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* =========================================
-   Utilities
-   ========================================= */
+/* Utilities */
 .container {
     width: 90%;
     max-width: var(--container-width);
@@ -59,28 +49,23 @@ a {
     transition: color 0.2s ease;
 }
 
-/* Explicit focus styles for accessibility */
-a:focus-visible,
-button:focus-visible {
+a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
 }
 
-/* =========================================
-   Header / Navigation
-   ========================================= */
+/* Header */
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .logo {
     font-weight: 700;
     font-size: 1.2rem;
-    letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -92,43 +77,36 @@ button:focus-visible {
 
 .nav-links a:not(.btn) {
     color: var(--text-secondary);
-    font-weight: 500;
 }
 
 .nav-links a:not(.btn):hover {
     color: var(--accent);
 }
 
-/* =========================================
-   Hero Section
-   ========================================= */
+/* Hero */
 .hero {
     padding-block: var(--section-spacing);
+    min-height: 70vh;
     display: flex;
     align-items: center;
-    min-height: 70vh;
 }
 
-.hero-content {
-    max-width: 800px;
-}
+.hero-content { max-width: 800px; }
 
 .overline {
     color: var(--accent);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
 .headline {
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 800;
-    line-height: 1.1;
     margin-bottom: 1rem;
-    letter-spacing: -1px;
-    background: linear-gradient(to right,
+    background: linear-gradient(
+        to right,
         var(--text-primary),
         var(--text-secondary)
     );
@@ -143,27 +121,27 @@ button:focus-visible {
 }
 
 .hero-text {
-    max-width: 600px;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
+    max-width: 650px;
+    margin-bottom: 1.5rem;
 }
 
-/* =========================================
-   Buttons
-   ========================================= */
+.hero-text.emphasis {
+    font-weight: 600;
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     border-radius: var(--border-radius);
     font-weight: 600;
-    border: 2px solid transparent;
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
     background-color: var(--accent);
-    color: #ffffff;
+    color: #fff;
 }
 
 .btn-primary:hover {
@@ -173,60 +151,61 @@ button:focus-visible {
 
 .btn-small {
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
     border: 1px solid var(--accent);
     color: var(--accent);
 }
 
 .btn-small:hover {
     background-color: var(--accent);
-    color: #ffffff;
+    color: #fff;
 }
 
-/* =========================================
-   Summary / Cards
-   ========================================= */
+/* Sections & Cards */
 .summary {
     padding-block: var(--section-spacing);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.summary-grid {
-    display: grid;
-    gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    .summary-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 .card {
     background-color: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .card h2 {
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
 }
 
-.about-card p,
-.about-card ul {
+.card p,
+.card ul {
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
-.about-card ul {
+.section-label {
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+/* Impact */
+.impact-list {
     padding-left: 1.2rem;
 }
 
-/* =========================================
-   Skills
-   ========================================= */
+.disclaimer {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Skills */
+.skills-group {
+    margin-bottom: 2rem;
+}
+
+.skills-group h3 {
+    margin-bottom: 0.8rem;
+}
+
 .skills-container {
     list-style: none;
     display: flex;
@@ -235,29 +214,20 @@ button:focus-visible {
 }
 
 .skill-chip {
-    background-color: rgba(99, 102, 241, 0.1);
-    color: var(--accent-hover);
     padding: 0.5rem 1rem;
-    border-radius: 50px;
+    border-radius: 999px;
+    background-color: rgba(99,102,241,0.1);
+    border: 1px solid rgba(99,102,241,0.2);
+    color: var(--accent-hover);
     font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-/* =========================================
-   Footer
-   ========================================= */
+/* Footer */
 .site-footer {
     padding-block: 3rem;
-    margin-top: var(--section-spacing);
+    border-top: 1px solid rgba(255,255,255,0.05);
     text-align: center;
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-content p {
-    margin-bottom: 0.5rem;
 }
 
 .social-links {
@@ -265,31 +235,18 @@ button:focus-visible {
 }
 
 .social-links a {
-    margin-inline: 0.5rem;
     color: var(--accent);
     font-weight: 600;
+    margin-inline: 0.5rem;
 }
 
 .social-links a:hover {
     text-decoration: underline;
 }
 
-/* =========================================
-   Mobile Adjustments
-   ========================================= */
+/* Mobile */
 @media (max-width: 600px) {
     .site-header {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .hero {
-        min-height: auto;
-        padding-top: 3rem;
-    }
-
-    .cta-group {
-        display: flex;
         flex-direction: column;
         gap: 1rem;
     }
@@ -300,13 +257,10 @@ button:focus-visible {
     }
 }
 
-/* =========================================
-   Reduced Motion Support (Accessibility)
-   ========================================= */
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
         transition: none !important;
     }
 }
-
